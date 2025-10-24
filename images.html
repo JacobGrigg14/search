@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
     <title>Search</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p><a href="index.html">Google Search</a></p>
+    <div class="top-links">
+        <a href="index.html">Google Search</a>
+    </div>
 
     <form action="https://www.google.com/search">
-        <input type="text" name="q">
-        <input type="hidden" name="tbm" value="isch">
-        <input type="submit" value="Image Search">
+        <input autocomplete="off" class="search-box" type="text" name="q">
+        <div class="centered-buttons">
+            <input class="buttons" type="hidden" name="tbm" value="isch">
+            <input class="buttons" type="submit" value="Image Search">
+        </div>
     </form>
 </body>

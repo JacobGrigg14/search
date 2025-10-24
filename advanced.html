@@ -2,27 +2,30 @@
 <html lang="en">
 <head>
     <title>Search</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p><a href="index.html">Google Search</a></p>
-
+    <div class="top-links">
+        <a href="index.html">Google Search</a>
+    </div>
+    
     <form action="https://www.google.com/search">
-        <div>
+        <div class="advanced-search-field">
             <label for="as_q">All these words:</label>
-            <input type="text" id="as_q" name="as_q">
+            <input autocomplete="off" class="advanced-textfield" type="text" id="as_q" name="as_q">
         </div>
-        <div>
+        <div class="advanced-search-field">
             <label for="as_epq">This exact word or phrase:</label>
-            <input type="text" id="as_epq" name="as_epq">
+            <input autocomplete="off" class="advanced-textfield" type="text" id="as_epq" name="as_epq">
         </div>
-        <div>
+        <div class="advanced-search-field">
             <label for="as_oq">Any of these words:</label>
-            <input type="text" id="as_oq" name="as_oq">
+            <input autocomplete="off" class="advanced-textfield" type="text" id="as_oq" name="as_oq">
         </div>
-        <div>
+        <div class="advanced-search-field">
             <label for="as_eq">None of these words:</label>
-            <input type="text" id="as_eq" name="as_eq">
+            <input autocomplete="off" class="advanced-textfield" type="text" id="as_eq" name="as_eq">
         </div>
-        <input type="submit" value="Advanced Search">
+        <input class="advanced-search-button" type="submit" value="Advanced Search">
     </form>
 </body>
