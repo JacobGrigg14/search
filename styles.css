@@ -8,6 +8,10 @@ body {
   background-color: white;
 }
 
+form.advanced-search-form {
+    width: 40vw;
+}
+
 .advanced-search-button{
     background-color: blue;
     color: white;
@@ -20,6 +24,26 @@ body {
 
 .advanced-search-field {
     margin-bottom: 5px;
+    display: flex;
+}
+
+.advanced-search-field label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    width: 40%;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.advanced-search-field input {
+    display: block;
+    width: 60%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #dfe1e5;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .advanced-textfield {
